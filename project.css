@@ -1,0 +1,105 @@
+.ror{
+    font-family: "Pushster", cursive;
+    text-align: center;
+    font-size: 40px;
+}
+/* first mobile*/
+.container{
+      display:grid;
+      grid-template-columns: 220px 300px 300px;
+      grid-template-rows: 100px 200px 300px;
+      grid-template-areas: 
+      "sd hd hd hd hd hd hd hd"
+      "sd er tr tr tr tr tr tr"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft" ; }
+  .header{
+    grid-area: hd;
+  }
+  .footer{
+    grid-area: sd;
+  }
+  .sidebar{
+    grid-area: main;
+  
+
+  }
+  .content{
+    grid-area: ft;
+    font-family: "Pushster", cursive;
+    text-align: center;
+  }
+  .fiber{
+    grid-area: er; 
+    background-image:url(odr.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .gree{
+    grid-area: tr;  
+    padding: 5px;
+    font-family: "Pushster", cursive;
+    color: sienna;
+  }
+  body{
+      background-color: hsl(186, 26%, 93%);
+  }
+  #fre{
+      font-family: "Pushster", cursive;
+      text-align: center;
+      font-size: 20px;
+      
+  }
+  .boxes{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      grid-gap: 10px ;
+      
+      
+  }
+  .photobox{
+      width: 250px;
+      height: 250px;
+      background-color: hsl(186, 26%, 93%);
+  }
+  #one{
+      background-image: url(oiu.jpg);
+      background-size: cover;
+  }
+  #two{
+    background-image: url(myf.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+h4{
+    color: steelblue;
+    font-style: italic;
+}
+@media(main-width:900px){
+    .container{
+      display:grid;
+      grid-template-columns: 300px 300px 300px;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-areas: 
+      "sd hd hd hd hd hd hd hd"
+      "sd er tr tr tr tr tr tr"
+      "sd main main main main main main main"
+      "ft ft ft ft ft ft ft ft" ;
+      font-size: 30px;
+
+}
+@media(main-width:1100px){
+    .container{
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 300px 300px 260px;
+        grid-template-areas: 
+        "sd hd hd hd hd hd hd hd"
+        "sd er tr tr tr tr tr tr"
+        "sd main main main main main main main"
+        "ft ft ft ft ft ft ft ft" ;
+        font-size: 40px;
+}
